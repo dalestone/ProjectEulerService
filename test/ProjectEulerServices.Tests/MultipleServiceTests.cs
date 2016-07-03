@@ -20,13 +20,29 @@ namespace ProjectEulerServices.Tests
         [Fact]
         public void ReturnSumGivenMultiples()
         {
-            Assert.Equal(233168, _multipleService.SumMultiples(3, 5, 1000));
+            var expected = 23;
+            var limit = 10;
+            var multiples = new List<int> { 3, 5 };
+            var actual = _multipleService.SumMultiples(multiples[0], multiples[1], limit);
+
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
         public void ReturnSmallestPositiveNumberEvenlyDivisbleGivenLimit()
         {
 
+        }
+
+        [Fact]
+        public void ReturnProjectEulerProblem1Answer()
+        {
+            var expected = 233168;
+            var limit = 1000;
+            var multiples = new List<int> { 3, 5 };
+            var actual = _multipleService.SumMultiples(multiples[0], multiples[1], limit);
+
+            Assert.Equal(expected, actual);
         }
     }
 }

@@ -22,6 +22,8 @@ namespace ProjectEulerService.Services
             return sum;
         }
 
+        //TODO: create an overload for sum multiples that allows a list of multiples to be passed
+
         public void SmallestMultiple(int limit)
         {
 
