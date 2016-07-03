@@ -29,12 +29,6 @@ namespace ProjectEulerServices.Tests
         }
 
         [Fact]
-        public void ReturnSmallestPositiveNumberEvenlyDivisbleGivenLimit()
-        {
-
-        }
-
-        [Fact]
         public void ReturnProjectEulerProblem1Answer()
         {
             var expected = 233168;
