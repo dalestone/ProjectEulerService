@@ -2,6 +2,12 @@
   "version": "1.0.0-*",
   "testRunner": "xunit",
 
+  "buildOptions": {
+    "copyToOutput": {
+      "include": [] 
+    }
+  },
+
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
